@@ -1,0 +1,48 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: ;
+}
+.kontainer {
+    width: 1000px;
+    margin: auto;
+    background-color: black;
+}
+.kontainer header nav a{}
+.kontainer header nav a.aktiv{}
+
+.kontainer main h1{}
+.kontainer main figure img{}
+.kontainer main figure figcaption {}
+
+.kontainer main article .anakonda h2 {}
+.kontainer main article .anakonda figure img{}
+.kontainer main article .anakonda figure figcaption{}
+
+.kontainer main article .vattenorm h2 {}
+.kontainer main article .vattenorm figure img{}
+.kontainer main article .vattenorm figure figcaption{}
+
+.kontainer main article .buskmästare h2 {}
+.kontainer main article .buskmästare figure img{}
+.kontainer main article .buskmästare figure figcaption{}
+
+.kontainer main .video-lada{
+    
+    display: none;
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.kontainer aside h3 {}
+.kontainer footer h3 {}
