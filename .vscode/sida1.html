@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reptiler</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="kontainer">
         <header>
-            <div class="rundbild">
-                 <button onclick="bytBild()">Spela video</button>
-            </div>
+            <img src="snake.jpg" class="circle" onclick="changeImage">
+
             <nav>
                 <a href="aktiv" class="sida1.html">Ormar</a>
                 <a href="sida2.html">Krokodiler</a>
@@ -21,22 +22,29 @@
         </header>
         <main>
             <h1>Ormar</h1>
-            <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
+            <figure class="orm">
+                <img src="./bilder/Snake.jpg" alt="">
+                <figcaption>Ormar (Serpentes) är en underordning i ordningen fjällbärande kräldjur. De har smal kropp
+                    <br>och cylindrisk kroppsform. Ormarna är växelvarma och köttätare, och vissa är kannibaler, det vill
+                    <br>säga de äter individer av samma art. Några arter har utvecklat ett värmekänsligt organ i nosen, med
+                    <br>vilket de i mörker kan känna kroppsvärmen av ett bytesdjur. Den äldsta bevarade förteckningen över
+                    <br>olika ormar återfinns i Brooklyn-papyrusen. De allra flesta ormar lever på land, men det finns
+                    <br>ungefär ett 60-tal arter som lever i haven.[1] Havsormarna anses ha det starkaste giftet, men är
+                    <br>inte aggressiva.
+                </figcaption>
             </figure>
             <article>
                 <div class="anakonda">
                     <h2></h2>
                     <figure>
-                        <img src="" alt="">
+                        <img src="./bilder/Anaconda.jpg" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </div>
                 <div class="vattenorm">
                     <h2></h2>
                     <figure>
-                        <img src="" alt="">
+                        <img src="./bilder/Water-snake.jpg" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </div>
@@ -69,4 +77,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
