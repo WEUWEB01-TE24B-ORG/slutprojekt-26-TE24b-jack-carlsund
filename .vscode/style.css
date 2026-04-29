@@ -2,58 +2,77 @@
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body, h1, h2, h3, h4, h5, h6, p, ul {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
-:root{
+
+:root {
     /* CSS HEX */
---dust-grey: #dad7cdff;
---dry-sage: #a3b18aff;
---fern: #588157ff;
---hunter-green: #3a5a40ff;
---pine-teal: #344e41ff;
+    --dust-grey: #dad7cdff;
+    --dry-sage: #a3b18aff;
+    --fern: #588157ff;
+    --hunter-green: #3a5a40ff;
+    --pine-teal: #344e41ff;
 }
-body{
+
+body {
     background-image: url(./bilder/e009845d-e607-4663-ae19-06dd50240ca7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-   
+    background-attachment: fixed;
+
 }
+
 .kontainer {
     width: 70vw;
     margin: auto;
     background-color: var(--fern);
-    margin-top: 3rem;   /* 1rem = 16px */
+    margin-top: 3rem;
+    /* 1rem = 16px */
     padding: 3rem;
     border-radius: 5px;
     border-color: var(--hunter-green);
     border: 10px solid;
 }
+
 .kontainer header {
     border: 1px solid black;
     border-radius: 4px;
     display: flex;
-    
+
 }
-.kontainer header nav { 
+
+.kontainer header nav {
     display: flex;
-    
+
     gap: 5rem;
     margin-left: 13rem;
     padding: 15px 15px;
     width: fit-content;
-    
-    
+
+
 }
-.kontainer header .circle
-{
+
+.kontainer header .circle {
     margin-top: 1rem;
-     
-   margin-left: 3rem;
+
+    margin-left: 3rem;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -62,7 +81,8 @@ body{
     border: 2px solid white;
     transition: 0.3s;
 }
-.kontainer header nav a{
+
+.kontainer header nav a {
     border: 1px solid black;
     border-radius: 4px;
     font-size: 2.5rem;
@@ -73,39 +93,43 @@ body{
     text-decoration: none;
 }
 
-.kontainer header nav a.aktiv{}
+.kontainer header nav a.aktiv {}
 
 .kontainer main {
     margin-top: 6rem;
     border: 1.px solid black;
 }
-.kontainer main h1{
+
+.kontainer main h1 {
     margin-left: 29rem;
-    font-size: 5rem;
+    font-size: 4rem;
 
 }
 
 .kontainer main .orm {
-  display: flex;
+    display: flex;
     justify-content: center;
 
 
 }
-.kontainer main .orm img{
-  
+
+.kontainer main .orm img {
+
     width: 20rem;
     height: 20rem;
     border-radius: 70%;
     border: 10px solid;
     border-color: var(--hunter-green);
-    
 
-    
+
+
 }
+
 .kontainer main .orm figcaption {
-      margin-left: 2rem;
-      margin-top: 2rem;
-    
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+
 }
 
 .kontainer main article {
@@ -114,40 +138,65 @@ body{
     justify-self: center;
     margin-top: 4rem;
     
-    
+
+
 }
-.kontainer main article .anakonda h2 {}
-.kontainer main article .anakonda figure img{
+
+.kontainer main article .anakonda h2 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.kontainer main article .anakonda figure img {
     width: 17.5rem;
     height: 17.5rem;
     border-radius: 70%;
-     border: 10px solid;
+    border: 10px solid;
     border-color: var(--hunter-green);
 }
-.kontainer main article .anakonda figure figcaption{}
 
-.kontainer main article .vattenorm h2 {}
-.kontainer main article .vattenorm figure img{
-       width: 17.5rem;
+.kontainer main article .anakonda figure figcaption {
+
+}
+
+.kontainer main article .vattenorm h2 {
+    font-size: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.kontainer main article .vattenorm figure img {
+    width: 17.5rem;
     height: 17.5rem;
     border-radius: 70%;
-     border: 10px solid;
+    border: 10px solid;
     border-color: var(--hunter-green);
 }
-.kontainer main article .vattenorm figure figcaption{}
 
-.kontainer main article .buskmästare h2 {}
-.kontainer main article .buskmästare figure img{
-       width: 17.5rem;
+.kontainer main article .vattenorm figure figcaption {}
+
+.kontainer main article .buskmästare h2 {
+    font-size: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.kontainer main article .buskmästare figure img {
+    width: 17.5rem;
     height: 17.5rem;
     border-radius: 70%;
-     border: 10px solid;
+    border: 10px solid;
     border-color: var(--hunter-green);
 }
-.kontainer main article .buskmästare figure figcaption{}
 
-.kontainer main .video-lada{
-    
+.kontainer main article .buskmästare figure figcaption {}
+
+.kontainer main .video-lada {
+
     display: none;
     background-color: #2c3e50;
     padding: 15px;
@@ -155,7 +204,9 @@ body{
 }
 
 .kontainer aside h3 {}
+
 .kontainer footer {
-     margin-top: 12rem;
+    margin-top: 12rem;
 }
+
 .kontainer footer h3 {}
