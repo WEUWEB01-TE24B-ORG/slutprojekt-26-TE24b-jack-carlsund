@@ -34,13 +34,14 @@ ul {
 body {
     background-image: url(./bilder/e009845d-e607-4663-ae19-06dd50240ca7.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
 
 .kontainer {
-    width: 70vw;
+
+    /* 1vp = 1% av fönstrets yta */
+    width: 70vw; 
     margin: auto;
     background-color: var(--fern);
     margin-top: 3rem;
@@ -49,12 +50,18 @@ body {
     border-radius: 5px;
     border-color: var(--hunter-green);
     border: 10px solid;
+    grid-template-areas: 
+    "sidhuvud sidhuvud"
+    "innehåll sidebar"
+    "sidfot sidfot" ;
+    display: grid;
 }
 
 .kontainer header {
     border: 1px solid black;
     border-radius: 4px;
     display: flex;
+    grid-area: sidhuvud;
 
 }
 
@@ -62,24 +69,30 @@ body {
     display: flex;
 
     gap: 5rem;
-    margin-left: 13rem;
+    margin-left: 11rem;
     padding: 15px 15px;
     width: fit-content;
 
 
 }
+.kontainer header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
 
 .kontainer header .circle {
-    margin-top: 1rem;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 3rem;
-    width: 60px;
-    height: 60px;
+    width: 80px; 
+    height: 80px;
     border-radius: 50%;
-    object-fit: cover;
     cursor: pointer;
     border: 2px solid white;
-    transition: 0.3s;
+    border-color: var(--hunter-green);
+    
 }
 
 .kontainer header nav a {
@@ -98,6 +111,7 @@ body {
 .kontainer main {
     margin-top: 6rem;
     border: 1.px solid black;
+    grid-area: innehåll;
 }
 
 .kontainer main h1 {
@@ -135,13 +149,11 @@ body {
 .kontainer main article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-self: center;
     margin-top: 4rem;
-    
-
-
 }
-
+.kontainer main article figure {
+    text-align: center;
+}
 .kontainer main article .anakonda h2 {
     font-size: 3rem;
     display: flex;
@@ -149,33 +161,41 @@ body {
 }
 
 .kontainer main article .anakonda figure img {
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 70%;
     border: 10px solid;
     border-color: var(--hunter-green);
+    
+  
 }
 
-.kontainer main article .anakonda figure figcaption {
-
+.kontainer main article .anakonda figure p {
+    text-align: center;
+   padding-top: 2rem;
+   
 }
 
-.kontainer main article .vattenorm h2 {
-    font-size: 3rem;
-    margin: auto;
+.kontainer main article .sjöorm h2 {
+   font-size: 3rem;
     display: flex;
     justify-content: center;
-}
+} 
 
-.kontainer main article .vattenorm figure img {
-    width: 17.5rem;
-    height: 17.5rem;
+ .kontainer main article .sjöorm figure img {
+     width: 15rem;
+    height: 15rem;
     border-radius: 70%;
     border: 10px solid;
     border-color: var(--hunter-green);
-}
+  
+} 
 
-.kontainer main article .vattenorm figure figcaption {}
+ .kontainer main article .sjöorm figure p {
+    text-align: center;
+     padding-top: 2rem;
+
+}
 
 .kontainer main article .buskmästare h2 {
     font-size: 3rem;
@@ -186,27 +206,36 @@ body {
 }
 
 .kontainer main article .buskmästare figure img {
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 70%;
     border: 10px solid;
     border-color: var(--hunter-green);
+ 
 }
 
-.kontainer main article .buskmästare figure figcaption {}
+.kontainer main article .buskmästare figure p {
+     text-align: center;
+     padding-top: 2rem;
+}
 
 .kontainer main .video-lada {
-
     display: none;
     background-color: #2c3e50;
     padding: 15px;
     border-radius: 8px;
 }
 
+.kontainer aside {
+    grid-area: sidebar;
+   /* border: 1rem solid black;
+  margin-left: 15rem;  */
+} 
 .kontainer aside h3 {}
 
 .kontainer footer {
     margin-top: 12rem;
+     grid-area: sidfot;
 }
 
 .kontainer footer h3 {}
