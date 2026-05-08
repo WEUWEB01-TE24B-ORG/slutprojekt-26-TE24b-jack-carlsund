@@ -1,97 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
+    <!-- Grundinställningar för tecken och mobilanpassning -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reptiler</title>
+    <title>Reptiler - Ödlor</title>
+
+    <!-- Koppling till CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- ===== HUVUDCONTAINER ===== -->
     <div class="kontainer">
+
+        <!-- ===== HEADER (logga + meny) ===== -->
         <header>
+
+            <!-- Klickbar bild som byter ödla -->
             <div class="cirkel">
-                <img id="odlabild1" class="circle" src="./bilder/Skogsödla.jpg" onclick="bytOdlaBild()">
+                <img id="odlabild1"
+                     class="circle"
+                     src="./bilder/Skogsödla.jpg"
+                     alt="Ödla bild"
+                     onclick="bytOdlaBild()">
             </div>
+
+            <!-- Navigationsmeny -->
             <nav>
                 <a href="sida1.html">Ormar</a>
                 <a href="sida2.html">Krokodiler</a>
                 <a href="sida3.html" class="aktiv">Ödlor</a>
-                <a href="sida4.html">sköldpaddor</a>
+                <a href="sida4.html">Sköldpaddor</a>
             </nav>
+
         </header>
+
+        <!-- ===== HUVUDINNEHÅLL ===== -->
         <main>
-            <h1>Ödla</h1>
+
+            <!-- Sidrubrik -->
+            <h1>Ödlor</h1>
+
+            <!-- Introduktionsbild + text -->
             <figure class="art">
-                <img src="./bilder/Ödla.jpg" alt="">
-                <figcaption>Ödlor (Lacertilia) är en underordning i klassen kräldjur. Ödlor är den artrikaste
-                    <br>kräldjursgruppen och förekommer i många olika habitat världen över, utom på Antarktis.
-                    Variationen i
-                    <br>utseende och levnadssätt är stor, från komodovaranen som kan bli över 3 meter lång till de
-                    minsta
-                    <br>geckoödlorna som bara blir några få centimeter långa. Till skillnad från ormar har ödlor i de
-                    flesta
-                    <br>fall fyra ben och en lång svans[1], men det finns även en del ödlor med tillbakabildade ben, som
-                    <br>kopparödlan.
+                <img src="./bilder/Ödla.jpg" alt="Bild på ödla">
+
+                <figcaption>
+                    Ödlor är en mycket artrik grupp kräldjur som finns över hela världen.
+                    De varierar kraftigt i storlek och levnadssätt.
+                    <br><br>
+                    Vissa arter som komodovaranen blir över 3 meter långa,
+                    medan andra som geckoödlor bara är några centimeter.
+                    <br><br>
+                    De flesta ödlor har fyra ben och lång svans, men vissa arter har reducerade ben.
                 </figcaption>
             </figure>
+
+            <!-- ===== TRE INFORMATIONSKORT ===== -->
             <article>
+
+                <!-- Sandödla -->
                 <div>
                     <h2>Sandödla</h2>
                     <figure>
-                        <img src="./bilder/Sandödla.JPG" alt="">
-                        <p>Sandödla (Lacerta agilis) är en äggläggande ödla av släktet halsbandsödlor (Lacerta), som
-                            föredrar öppna landskapstyper med lägre vegetation. Den förekommer i de tempererade delarna
-                            av palearktis, från mellersta och södra Europa, till Sibirien i öster och mellersta Sverige
-                            i norr. Det lever av små ryggradslösa djur som insekter.</p>
-                    </figure>
-                </div>
-                <div>
-                    <h2>Kameleont</h2>
-                    <figure>
-                        <img src="./bilder/Kameleont.jpg" alt="uwefeuwfw">
-                        <p>Kameleonter (Chamaeleonidae) är en familj i ödlornas underordning och kräldjurens klass. Det
-                            finns ungefär 200 kameleontarter.[1] Ordet kameleont kommer från grekiskans "chamaileʹōn"
-                            som betyder "litet lejon på marken". Kameleonter påträffas dock sällan på marken utan är
-                            utpräglat busk- eller trädlevande.[2]
+                        <img src="./bilder/Sandödla.JPG" alt="Bild på sandödla">
+                        <p>
+                            Sandödlan lever i öppna och soliga miljöer i Europa och Asien.
+                            Den äter främst insekter och andra små ryggradslösa djur.
                         </p>
                     </figure>
                 </div>
+
+                <!-- Kameleont -->
+                <div>
+                    <h2>Kameleont</h2>
+                    <figure>
+                        <img src="./bilder/Kameleont.jpg" alt="Bild på kameleont">
+                        <p>
+                            Kameleonter är kända för sin förmåga att ändra färg.
+                            De lever främst i träd och buskar och använder sin långa tunga för att fånga byten.
+                        </p>
+                    </figure>
+                </div>
+
+                <!-- Skogsödla -->
                 <div>
                     <h2>Skogsödla</h2>
                     <figure>
-                        <img src="./bilder/Skogsödla.jpg" alt="">
-                        <p>Skogsödla (Zootoca vivipara) är en upp till 18 cm lång ödla som placeras i det egna släktet
-                            Zootoca. Den förekommer i större delen av Europa och Asien, främst i skog och andra miljöer
-                            med fuktigt mikroklimat och hög vegetation.</p>
+                        <img src="./bilder/Skogsödla.jpg" alt="Bild på skogsödla">
+                        <p>
+                            Skogsödlan lever i fuktiga skogsmiljöer i Europa och Asien.
+                            Den är en liten ödla som trivs i svalare klimat.
+                        </p>
                     </figure>
                 </div>
+
             </article>
+
+            <!-- ===== VIDEO-KNAPP ===== -->
             <div class="video">
                 <button onclick="spelaÖdlaVideo()">Spela video</button>
             </div>
+
+            <!-- Video som visas vid klick -->
             <div class="video-lada">
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/Ni27GEZ7OdI?si=lh3ZyCu7QXTy240s"
-                    title="YouTube video player" frameborder="0"
+                <iframe width="100%" height="250"
+                    src="https://www.youtube.com/embed/Ni27GEZ7OdI?si=lh3ZyCu7QXTy240s"
+                    title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
+
         </main>
+
+        <!-- ===== SIDOPANEL ===== -->
         <aside>
-            <h3>Refrencer:</h3>
+            <h3>Referenser:</h3>
             <ul>
-                <li>Wikipedia</li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="https://sv.wikipedia.org/wiki/Sand%C3%B6dla">Sandödla – Wikipedia</a></li>
+                <li><a href="https://sv.wikipedia.org/wiki/Kameleonter">Kameleont – Wikipedia</a></li>
+                <li><a href="https://sv.wikipedia.org/wiki/Skogs%C3%B6dla">Skogsödla – Wikipedia</a></li>
             </ul>
         </aside>
+
+        <!-- ===== FOOTER ===== -->
         <footer>
             <h3>Publicerad av: Jack Carlsund TE24b</h3>
         </footer>
+
     </div>
+
+    <!-- Koppling till JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -1,100 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
+    <!-- Grundinställningar för tecken och responsiv design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reptiler</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Huvudcontainer för hela sidan -->
     <div class="kontainer">
+        <!--Header som ligger högst upp-->
         <header>
+            <!-- När användaren klickar på bilden byter den orm -->
             <div class="cirkel">
-                <img id="ormbild1" class="circle" src="./bilder/Anaconda.jpg" onclick="bytOrmBild()">
+                <img id="ormbild1"
+                     class="circle"
+                     src="./bilder/Anaconda.jpg"
+                     alt="Orm bild"
+                     onclick="bytOrmBild()">
             </div>
+            <!-- Navigations meny där du kan gå till andra hemsidor -->
             <nav>
                 <a href="sida1.html" class="aktiv">Ormar</a>
                 <a href="sida2.html">Krokodiler</a>
                 <a href="sida3.html">Ödlor</a>
-                <a href="sida4.html">sköldpaddor</a>
+                <a href="sida4.html">Sköldpaddor</a>
             </nav>
         </header>
+        <!-- Här är main och det mesta av innehållet ligger här -->
         <main>
+            <!-- Här är sidans huvud rubrik -->
             <h1>Ormar</h1>
+            <!--Här är en stor bild och text-->
             <figure class="art">
-                <img src="./bilder/Snake.jpg" alt="">
-                <figcaption>Ormar (Serpentes) är en underordning i ordningen fjällbärande kräldjur. De har smal kropp
-                    <br>och cylindrisk kroppsform. Ormarna är växelvarma och köttätare, och vissa är kannibaler, det
-                    vill
-                    <br>säga de äter individer av samma art. Några arter har utvecklat ett värmekänsligt organ i nosen,
-                    med
-                    <br>vilket de i mörker kan känna kroppsvärmen av ett bytesdjur. Den äldsta bevarade förteckningen
-                    över
-                    <br>olika ormar återfinns i Brooklyn-papyrusen. De allra flesta ormar lever på land, men det finns
-                    <br>ungefär ett 60-tal arter som lever i haven.[1] Havsormarna anses ha det starkaste giftet, men är
-                    <br>inte aggressiva.
+                <img src="./bilder/Snake.jpg" alt="Bild på orm">
+
+                <figcaption>
+                    Ormar (Serpentes) är en underordning i ordningen fjällbärande kräldjur.
+                    De har smal kropp och cylindrisk kroppsform.
+                    <br><br>
+                    Ormar är växelvarma och köttätare, och vissa är kannibaler.
+                    Några arter kan känna värme från byten i mörker via specialorgan.
+                    <br><br>
+                    De flesta lever på land men cirka 60 arter lever i havet.
                 </figcaption>
             </figure>
+
+            <!-- ===== TRE INFORMATIONSKORT ===== -->
             <article>
+
+                <!-- Anakonda -->
                 <div>
                     <h2>Anakonda</h2>
                     <figure>
-                        <img src="./bilder/Anaconda.jpg" alt="">
-                        <p>Arten grön anakonda räknas vanligen som den största och tyngsta ormen i världen. Den når
-                            ibland en längd upp till fem meter (en individ i New Yorks zoo var 884 cm lång) och en vikt
-                            upp till 150 kilogram, men de flesta individerna är av mindre storlek. På så sätt är den
-                            inte längre än arten nätpyton men den är tjockare.</p>
-                    </figure>
-                </div>
-                <div>
-                    <h2>Sjöorm</h2>
-                    <figure>
-                        <img src="./bilder/Water-snake.jpg" alt="">
-                        <p>Sjöorm eller havsorm (särskilt i uttrycket stora sjöormen, stora havsormen)[1] är inom
-                            sjömanstradition[2] och kryptozoologi ett fabelaktigt djur beskrivet som oerhört stora
-                            vattenlevande ormar, vilket även är ett vanligt delmotiv bland flera mytologiska sjöodjur
-                            och havsvidunder världen över. Fabeldjuret i sig har beskrivits som med långsträckt huvud,
-                            man eller manlikande ryggfenor och röda ögon.
+                        <img src="./bilder/Anaconda.jpg" alt="Bild på en anakonda">
+                        <p>
+                            Grön anakonda räknas som en av världens största ormar och kan bli upp till 5 meter lång
+                            och väga upp till 150 kg. Den är mycket kraftig jämfört med andra ormar.
                         </p>
                     </figure>
                 </div>
+
+                <!-- Sjöorm -->
+                <div>
+                    <h2>Sjöorm</h2>
+                    <figure>
+                        <img src="./bilder/Water-snake.jpg" alt="Bild på en vattenorm">
+                        <p>
+                            Sjöormen är ett mytologiskt djur som ofta beskrivs som en gigantisk orm i havet.
+                            Den förekommer i sjömanstraditioner och kryptozoologi.
+                        </p>
+                    </figure>
+                </div>
+
+                <!-- Buskmästare -->
                 <div>
                     <h2>Buskmästare</h2>
                     <figure>
-                        <img src="./bilder/Bushmaster.jpg" alt="">
-                        <p>Buskmästare (Lachesis muta, även på svenska kallad bushmaster) är en art i släktet hålormar
-                            (även släktet kallas ibland "buskmästare", där den här arten är typart) som lever i
-                            Centralamerika söderut till subtropiska Amazonas.[1] Det är den största näsgropsormen, om än
-                            inte speciellt aggressiv.</p>
+                        <img src="./bilder/Bushmaster.jpg" alt="Bild på buskmästare">
+                        <p>
+                            Buskmästaren är en stor giftsnok som lever i Central- och Sydamerika.
+                            Den är kraftig men inte särskilt aggressiv.
+                        </p>
                     </figure>
                 </div>
+
             </article>
+
+            <!-- ===== VIDEO-KNAPP ===== -->
             <div class="video">
                 <button onclick="spelaOrmVideo()">Spela video</button>
             </div>
+
+            <!-- Video som visas när man klickar -->
             <div class="video-lada">
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/EG5PzvdWreE?si=GNKUKeY14MbWJ6Wy"
-                    title="YouTube video player" frameborder="0"
+                <iframe width="100%" height="250"
+                    src="https://www.youtube.com/embed/EG5PzvdWreE?si=GNKUKeY14MbWJ6Wy"
+                    title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
+
         </main>
+
+        <!-- ===== SIDOPANEL ===== -->
         <aside>
-            <h3>Refrencer:</h3>
+            <h3>Referenser:</h3>
             <ul>
-                <li>Wikipedia</li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="https://sv.wikipedia.org/wiki/Anakondor">Anaconda – Wikipedia</a></li>
+                <li><a href="https://sv.wikipedia.org/wiki/Sj%C3%B6orm">Sjöorm – Wikipedia</a></li>
+                <li><a href="https://sv.wikipedia.org/wiki/Buskm%C3%A4stare">Buskmästare – Wikipedia</a></li>
             </ul>
         </aside>
+
+        <!-- ===== FOOTER ===== -->
         <footer>
             <h3>Publicerad av: Jack Carlsund TE24b</h3>
         </footer>
+
     </div>
+
+    <!-- Koppling till JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>

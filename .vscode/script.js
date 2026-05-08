@@ -1,87 +1,111 @@
-function bytOrmBild()
-{
+
+// Byter bild för ormarna
+
+function bytOrmBild() {
+
     let ormBild1 = document.getElementById("ormbild1");
 
-    if (ormBild1.src.includes("Anaconda.jpg"))
-    {
+    if (ormBild1.src.includes("Anaconda.jpg")) {
+
         ormBild1.src = "./bilder/Bushmaster.jpg";
     }
-    else if(ormBild1.src.includes("Bushmaster.jpg"))
-    {
-        ormBild1.src = "./bilder/Water-snake.jpg"
+
+    else if (ormBild1.src.includes("Bushmaster.jpg")) {
+
+        ormBild1.src = "./bilder/Water-snake.jpg";
     }
-    else
-    {
-        ormBild1.src = "./bilder/Anaconda.jpg"
+
+    else {
+
+        ormBild1.src = "./bilder/Anaconda.jpg";
     }
 }
 
+// Byter bild för krokodilerna
+function bytKrokodilBild() {
 
-
-function bytKrokodilBild()
-{
     let krokodilbild1 = document.getElementById("krokodilbild1");
 
-    if (krokodilbild1.src.includes("Spetskrokodilen.jpg"))
-    {
+    if (krokodilbild1.src.includes("Spetskrokodilen.jpg")) {
+
         krokodilbild1.src = "./bilder/Pansarkrokodil.jpg";
     }
-    else if(krokodilbild1.src.includes("Pansarkrokodil.jpg"))
-    {
-        krokodilbild1.src = "./bilder/Sötvattenskrokodil.jpg"
+
+    else if (krokodilbild1.src.includes("Pansarkrokodil.jpg")) {
+
+        krokodilbild1.src = "./bilder/Sötvattenskrokodil.jpg";
     }
-    else
-    {
-        krokodilbild1.src = "./bilder/Spetskrokodilen.jpg"
+
+    else {
+
+        krokodilbild1.src = "./bilder/Spetskrokodilen.jpg";
     }
 }
+
+// Byter bildför ödlor
 function bytOdlaBild() {
+
     let odlabild1 = document.getElementById("odlabild1");
 
-    // Vi kollar både .jpg och .JPG för att vara säkra
-    if (odlabild1.src.includes("./bilder/Skogsödla.jpg")) {
+    if (odlabild1.src.includes("Skogsödla.jpg")) {
+
         odlabild1.src = "./bilder/Kameleont.jpg";
-    } 
+    }
+
     else if (odlabild1.src.includes("Kameleont.jpg")) {
+
         odlabild1.src = "./bilder/Sandödla.jpg";
-    } 
+    }
+
     else {
-        odlabild1.src = "./bilder/Kameleont.jpg"; // Se till att detta matchar din fil
+
+        odlabild1.src = "./bilder/Kameleont.jpg";
     }
 }
+
+// Byter bild för sköldpaddorna. Just denna är dock tagen på grund av att metoden som jag gjorde fungerade inte på den här, så då läste jag att man kunnde använda arrays istället
+let sköldIndex = 0;
 function bytSköldpaddaBild() {
-    let sköldpaddabild1 = document.getElementById("sköldpaddabild1");
 
-    // 1. Kolla om vi har landsköldpaddan (första bilden)
-    if (sköldpaddabild1.src.includes("Landssköldpadda.jpg")) {
-        sköldpaddabild1.src = "./bilder/Havssköldpadda.JPG";
-    } 
-    // 2. Kolla om vi har havssköldpaddan (andra bilden)
-    // VIKTIGT: Här måste det vara .JPG med stora bokstäver om det är så i HTML
-    else if (sköldpaddabild1.src.includes("Havssköldpadda.JPG")) {
-        sköldpaddabild1.src = "./bilder/Cheloniamydas.JPG";
-    } 
-    // 3. Om det är Cheloniamydas (tredje bilden), gå tillbaka till början
-    else {
-        sköldpaddabild1.src = "./bilder/Landssköldpadda.jpg";
+    let img = document.getElementById("sköldpaddabild1");
+
+    let bilder = [
+
+        "./bilder/Landssköldpadda.jpg",
+        "./bilder/Havssköldpadda.JPG",
+        "./bilder/Cheloniamydas.JPG"
+    ];
+
+    sköldIndex++;
+
+    if (sköldIndex >= bilder.length) {
+
+        sköldIndex = 0;
     }
+
+    img.src = bilder[sköldIndex];
 }
 
-    
-function spelaOrmVideo()
-{
-    document.querySelector(".video-lada").style.display = "block"
-}
-function spelaKrokodilVideo()
-{
-    document.querySelector(".video-lada").style.display = "block"
+// Visar video om ormar
+function spelaOrmVideo() {
+
+    document.querySelector(".video-lada").style.display = "block";
 }
 
-function spelaÖdlaVideo()
-{
-    document.querySelector(".video-lada").style.display = "block"
+// Visar video om krokodiler
+function spelaKrokodilVideo() {
+
+    document.querySelector(".video-lada").style.display = "block";
 }
-function spelaSköldpaddsVideo()
-{
-    document.querySelector(".video-lada").style.display = "block"
+
+// Visar video om ödlor
+function spelaÖdlaVideo() {
+
+    document.querySelector(".video-lada").style.display = "block";
+}
+
+// Visar video om sköldpaddor
+function spelaSköldpaddsVideo() {
+
+    document.querySelector(".video-lada").style.display = "block";
 }
