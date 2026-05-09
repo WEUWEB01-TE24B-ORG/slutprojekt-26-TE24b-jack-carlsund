@@ -227,6 +227,11 @@ body {
     border-radius: 4px;
 }
 
+.video-frame {
+    width: 100%;
+    border: none;
+}
+
 /* Videon */
 .kontainer .video {
     text-align: center;
@@ -254,71 +259,106 @@ button:hover {
     line-height: 1.8;
 }
 
-/* Detta är den responsiva delen för mobil */
+/* För att göra den responsiv för mobilen, mycket av koden för responsive layout har jag kollat upp på google och youtbe*/
 @media (max-width: 678px) {
 
-    /* Gör containern fullbredd på mobil */
-    /* !important betyder att den kommer prioriteras framförallt annat, viktigt eftersom mina värden var väldigt hårda förut, !important hittade jag på youtube */
+    /* Här är kontainern */
     .kontainer {
-        max-width: 100% !important;
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 1rem !important;
-    }
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 1rem;
 
-    /* Staplar header och navigation, eftersom allt på mobil ska staplas på varandra */
-    .kontainer header {
-        height: auto;
+        /* Byter från grid till flex */
+        display: flex;
         flex-direction: column;
     }
 
-    /* Gör så att menyn byter rad på mindre skärmar */
-    .kontainer header nav {
-        flex-wrap: wrap; /* Gör så att menyn byter rad automatiskt om den inte får plats på mindre skärmar, den är tagen */
-        justify-content: center;
-        margin-left: 0 !important;
+    /* För att fixa header */
+    .kontainer header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
     }
 
-    /* Gör att texten blir mindre på mobil */
+    /* För att fixa nav */
+    .kontainer header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Här är alla meny knappar */
     .kontainer header nav a {
         font-size: 1rem;
+        padding: 0.5rem;
     }
 
-    /* Gör att huvudrubrikerna hamnar i mitten*/
+    /* Själva innehållet i main */
+    .kontainer main {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* H1/reubrik */
     .kontainer main h1 {
-        margin-left: 0 !important;
+        margin-left: 0;
         text-align: center;
         font-size: 2.5rem;
     }
 
-    /* Staplar artiklarna vertikalt */
-    .kontainer main article {
-        grid-template-columns: 1fr;
+    /*Fixar bilderna och texterna som ligger i art*/
+    .kontainer main .art {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
 
-    /* Gör att även bilderna blir responsiva, kollade på yoube för detta */
-    .kontainer main article figure img,
+    /* Fixar bildernas storlekar */
     .kontainer main .art img,
-    .kontainer main .krokodil img {
+    .kontainer main article figure img {
         width: 80%;
         height: auto;
     }
 
-    /* Sidebar får 100% bredd */
+    /* Text under den stora runda djur bilden */
+    .kontainer main .art figcaption{
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    /* Artiklarna, de staplas på varandra */
+    .kontainer main article {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Sidebaren */
     .kontainer aside {
         width: 100%;
         height: auto;
+        margin-top: 2rem;
     }
 
-    /* Gör att fottern anpassas */
+    /* Footer */
     .kontainer footer {
         width: 100%;
+        margin-top: 2rem;
         font-size: 1.5rem;
     }
 
-    /* Knappen får 100%bredd */
+    /* Fixar video knappen */
     .kontainer .video button {
         width: 100%;
+        font-size: 1.5rem;
     }
 }
 
