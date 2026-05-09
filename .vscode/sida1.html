@@ -2,12 +2,12 @@
 <html lang="sv">
 
 <head>
-    <!-- Grundinställningar för tecken och responsiv design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reptiler</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Huvudcontainer för hela sidan -->
     <div class="kontainer">
@@ -15,11 +15,7 @@
         <header>
             <!-- När användaren klickar på bilden byter den orm -->
             <div class="cirkel">
-                <img id="ormbild1"
-                     class="circle"
-                     src="./bilder/Anaconda.jpg"
-                     alt="Orm bild"
-                     onclick="bytOrmBild()">
+                <img id="ormbild1" class="circle" src="./bilder/Anaconda.webp" alt="Orm bild" onclick="bytOrmBild()">
             </div>
             <!-- Navigations meny där du kan gå till andra hemsidor -->
             <nav>
@@ -35,79 +31,65 @@
             <h1>Ormar</h1>
             <!--Här är en stor bild och text-->
             <figure class="art">
-                <img src="./bilder/Snake.jpg" alt="Bild på orm">
-
+                <img src="./bilder/Snake.webp" alt="Bild på orm">
                 <figcaption>
-                    Ormar (Serpentes) är en underordning i ordningen fjällbärande kräldjur.
-                    De har smal kropp och cylindrisk kroppsform.
-                    <br><br>
-                    Ormar är växelvarma och köttätare, och vissa är kannibaler.
-                    Några arter kan känna värme från byten i mörker via specialorgan.
-                    <br><br>
-                    De flesta lever på land men cirka 60 arter lever i havet.
+                    <br>Ormar (Serpentes) är en underordning i ordningen fjällbärande kräldjur.
+                    <br>De har smal kropp och cylindrisk kroppsform.
+                    <br>Ormar är växelvarma och köttätare, och vissa är kannibaler.
+                    <br>Några arter kan känna värme från byten i mörker via specialorgan.
+                    <br>De flesta lever på land men cirka 60 arter lever i havet.
                 </figcaption>
             </figure>
-
-            <!-- ===== TRE INFORMATIONSKORT ===== -->
+            <!--Här är tre olia subarter och information om dem-->
             <article>
-
-                <!-- Anakonda -->
+                <!--Första subarten-->
                 <div>
                     <h2>Anakonda</h2>
                     <figure>
-                        <img src="./bilder/Anaconda.jpg" alt="Bild på en anakonda">
+                        <img src="./bilder/Anaconda.webp" alt="Bild på en anakonda">
                         <p>
                             Grön anakonda räknas som en av världens största ormar och kan bli upp till 5 meter lång
                             och väga upp till 150 kg. Den är mycket kraftig jämfört med andra ormar.
                         </p>
                     </figure>
                 </div>
-
-                <!-- Sjöorm -->
+                <!--Andra subarten-->
                 <div>
                     <h2>Sjöorm</h2>
                     <figure>
-                        <img src="./bilder/Water-snake.jpg" alt="Bild på en vattenorm">
+                        <img src="./bilder/Water-snake.webp" alt="Bild på en vattenorm">
                         <p>
                             Sjöormen är ett mytologiskt djur som ofta beskrivs som en gigantisk orm i havet.
                             Den förekommer i sjömanstraditioner och kryptozoologi.
                         </p>
                     </figure>
                 </div>
-
-                <!-- Buskmästare -->
+                <!--Tredje subarten-->
                 <div>
                     <h2>Buskmästare</h2>
                     <figure>
-                        <img src="./bilder/Bushmaster.jpg" alt="Bild på buskmästare">
+                        <img src="./bilder/Bushmaster.webp" alt="Bild på buskmästare">
                         <p>
                             Buskmästaren är en stor giftsnok som lever i Central- och Sydamerika.
                             Den är kraftig men inte särskilt aggressiv.
                         </p>
                     </figure>
                 </div>
-
             </article>
-
-            <!-- ===== VIDEO-KNAPP ===== -->
+            <!--Här är videoknappen som dyker upp-->
             <div class="video">
                 <button onclick="spelaOrmVideo()">Spela video</button>
             </div>
-
-            <!-- Video som visas när man klickar -->
+            <!--Det här är information om videon som ska spelas-->
             <div class="video-lada">
-                <iframe width="100%" height="250"
-                    src="https://www.youtube.com/embed/EG5PzvdWreE?si=GNKUKeY14MbWJ6Wy"
-                    title="YouTube video player"
-                    frameborder="0"
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/EG5PzvdWreE?si=GNKUKeY14MbWJ6Wy"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
-
         </main>
-
-        <!-- ===== SIDOPANEL ===== -->
+        <!--Sidebaren där referenserna ska stå-->
         <aside>
             <h3>Referenser:</h3>
             <ul>
@@ -116,17 +98,12 @@
                 <li><a href="https://sv.wikipedia.org/wiki/Buskm%C3%A4stare">Buskmästare – Wikipedia</a></li>
             </ul>
         </aside>
-
-        <!-- ===== FOOTER ===== -->
+        <!--Footern där det står vem som publicerat -->
         <footer>
             <h3>Publicerad av: Jack Carlsund TE24b</h3>
         </footer>
-
     </div>
-
-    <!-- Koppling till JavaScript -->
     <script src="script.js"></script>
-
 </body>
 
 </html>

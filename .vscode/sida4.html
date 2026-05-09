@@ -2,111 +2,92 @@
 <html lang="sv">
 
 <head>
-    <!-- Grundinställningar för teckenkodning och mobilanpassning -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Reptiler - Sköldpaddor</title>
-
-    <!-- Kopplar in CSS -->
+    <title>Reptiler</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Huvudcontainer som håller hela layouten -->
+    <!-- Huvudcontainer för hela sidan -->
     <div class="kontainer">
-
-        <!-- ================= HEADER ================= -->
+        <!--Header som ligger högst upp-->
         <header>
-
-            <!-- Klickbar bild som byter sköldpadda -->
+            <!-- När användaren klickar på bilden byter den sköldpadda -->
             <div class="cirkel">
-                <img id="sköldpaddabild1"
-                     class="circle"
-                     src="./bilder/Havssköldpadda.JPG"
-                     alt="Sköldpadda"
-                     onclick="bytSköldpaddaBild()">
+                <img id="sköldpaddabild1" class="circle" src="./bilder/Havssköldpadda.webp" alt="Sköldpadda"
+                    onclick="bytSköldpaddaBild()">
             </div>
-
-            <!-- Navigation mellan sidor -->
+            <!-- Navigations meny där du kan gå till andra hemsidor -->
             <nav>
                 <a href="sida1.html">Ormar</a>
                 <a href="sida2.html">Krokodiler</a>
                 <a href="sida3.html">Ödlor</a>
                 <a href="sida4.html" class="aktiv">Sköldpaddor</a>
             </nav>
-
         </header>
-
-        <!-- ================= MAIN INNEHÅLL ================= -->
+        <!-- Här är main och det mesta av innehållet ligger här -->
         <main>
-
-            <!-- Sidrubrik -->
+            <!-- Här är sidans huvud rubrik -->
             <h1>Sköldpaddor</h1>
-
-            <!-- Stor introduktionsbild + text -->
+            <!--Här är en stor bild och text-->
             <figure class="art">
-                <img src="./bilder/Sköldpadda.jpg" alt="Sköldpadda">
+                <img src="./bilder/Sköldpadda.webp" alt="Sköldpadda">
                 <figcaption>
-                    Sköldpaddor (Testudines) är en ordning inom kräldjuren...
+                    Sköldpaddor (Testudines) är en ordning inom kräldjuren som <br>
+                    utmärks av en sköld som skyddar mjukdelarna, och som består av de två underordningarna <br>
+                    gömhalssköldpaddor och vändhalssköldpaddor. Sköldpaddor är djur som är kända för sina <br> 
+                    långsamma rörelser. De tunga klumpiga skalen som begränsar deras steglängd är en stor anledning till <br>
+                    det. Landlevande sköldpaddor har korta, stadiga fötter. <br>
                 </figcaption>
             </figure>
-
-            <!-- Tre informationsblock om olika sköldpaddor -->
+            <!--Här är tre olia subarter och information om dem-->
             <article>
-
+                <!--Första subarten-->
                 <div>
                     <h2>Havssköldpaddor</h2>
                     <figure>
-                        <img src="./bilder/Havssköldpadda.JPG" alt="Havssköldpadda">
+                        <img src="./bilder/Havssköldpadda.webp" alt="Havssköldpadda">
                         <p>
                             Havssköldpaddor lever i havet och har simfötter istället för ben...
                         </p>
                     </figure>
                 </div>
-
+                <!--Andra subarten-->
                 <div>
                     <h2>Landsköldpaddor</h2>
                     <figure>
-                        <img src="./bilder/Landssköldpadda.jpg" alt="Landsköldpadda">
+                        <img src="./bilder/Landssköldpadda.webp" alt="Landsköldpadda">
                         <p>
                             Landsköldpaddor lever på land och kan bli mycket gamla...
                         </p>
                     </figure>
                 </div>
-
+                <!--Tredje subarten-->
                 <div>
                     <h2>Chelonia mydas</h2>
                     <figure>
-                        <img src="./bilder/Cheloniamydas.jpg" alt="Chelonia mydas">
+                        <img src="./bilder/Cheloniamydas.webp" alt="Chelonia mydas">
                         <p>
                             Grön havssköldpadda är en av de största arterna...
                         </p>
                     </figure>
                 </div>
-
             </article>
-
-            <!-- Knapp som visar video -->
+            <!--Här är videoknappen som dyker upp-->
             <div class="video">
                 <button onclick="spelaSköldpaddsVideo()">Spela video</button>
             </div>
-
-            <!-- Video som visas via JavaScript -->
+            <!--Det här är information om videon som ska spelas-->
             <div class="video-lada">
-                <iframe width="100%" height="250"
-                    src="https://www.youtube.com/embed/GoQeOLQYlos"
-                    title="Sköldpaddor video"
-                    frameborder="0"
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/GoQeOLQYlos"
+                    title="Sköldpaddor video" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
-
         </main>
-
-        <!-- ================= SIDEBAR ================= -->
+        <!--Sidebaren där referenserna ska stå-->
         <aside>
             <h3>Referenser:</h3>
             <ul>
@@ -115,16 +96,12 @@
                 <li><a href="https://sv.wikipedia.org/wiki/Gr%C3%B6n_havssk%C3%B6ldpadda">Chelonia mydas</a></li>
             </ul>
         </aside>
-
-        <!-- ================= FOOTER ================= -->
+        <!--Footern där det står vem som publicerat -->
         <footer>
             <h3>Publicerad av: Jack Carlsund TE24b</h3>
         </footer>
-
     </div>
-
-    <!-- Kopplar in JavaScript -->
     <script src="script.js"></script>
-
 </body>
+
 </html>

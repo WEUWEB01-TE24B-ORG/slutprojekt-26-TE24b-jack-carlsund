@@ -2,123 +2,94 @@
 <html lang="sv">
 
 <head>
-    <!-- Grundinställningar för tecken och mobilanpassning -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reptiler - Ödlor</title>
-
-    <!-- Koppling till CSS -->
+    <title>Reptiler</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- ===== HUVUDCONTAINER ===== -->
+    <!-- Huvudcontainer för hela sidan -->
     <div class="kontainer">
-
-        <!-- ===== HEADER (logga + meny) ===== -->
+        <!--Header som ligger högst upp-->
         <header>
-
-            <!-- Klickbar bild som byter ödla -->
+            <!-- När användaren klickar på bilden byter den orm -->
             <div class="cirkel">
-                <img id="odlabild1"
-                     class="circle"
-                     src="./bilder/Skogsödla.jpg"
-                     alt="Ödla bild"
-                     onclick="bytOdlaBild()">
+                <img id="odlabild1" class="circle" src="./bilder/Skogsödla.webp" alt="Ödla bild" onclick="bytOdlaBild()">
             </div>
-
-            <!-- Navigationsmeny -->
+            <!-- Navigations meny där du kan gå till andra hemsidor -->
             <nav>
                 <a href="sida1.html">Ormar</a>
                 <a href="sida2.html">Krokodiler</a>
                 <a href="sida3.html" class="aktiv">Ödlor</a>
                 <a href="sida4.html">Sköldpaddor</a>
             </nav>
-
         </header>
-
-        <!-- ===== HUVUDINNEHÅLL ===== -->
+        <!-- Här är main och det mesta av innehållet ligger här -->
         <main>
-
-            <!-- Sidrubrik -->
+            <!-- Här är sidans huvud rubrik -->
             <h1>Ödlor</h1>
-
-            <!-- Introduktionsbild + text -->
+            <!--Här är en stor bild och text-->
             <figure class="art">
-                <img src="./bilder/Ödla.jpg" alt="Bild på ödla">
-
+                <img src="./bilder/Ödla.webp" alt="Bild på ödla">
                 <figcaption>
                     Ödlor är en mycket artrik grupp kräldjur som finns över hela världen.
                     De varierar kraftigt i storlek och levnadssätt.
-                    <br><br>
                     Vissa arter som komodovaranen blir över 3 meter långa,
                     medan andra som geckoödlor bara är några centimeter.
-                    <br><br>
                     De flesta ödlor har fyra ben och lång svans, men vissa arter har reducerade ben.
                 </figcaption>
             </figure>
-
-            <!-- ===== TRE INFORMATIONSKORT ===== -->
+            <!--Här är tre olia subarter och information om dem-->
             <article>
-
-                <!-- Sandödla -->
+                <!--Första subarten-->
                 <div>
                     <h2>Sandödla</h2>
                     <figure>
-                        <img src="./bilder/Sandödla.JPG" alt="Bild på sandödla">
+                        <img src="./bilder/Sandödla.webp" alt="Bild på sandödla">
                         <p>
                             Sandödlan lever i öppna och soliga miljöer i Europa och Asien.
                             Den äter främst insekter och andra små ryggradslösa djur.
                         </p>
                     </figure>
                 </div>
-
-                <!-- Kameleont -->
+                <!--Andra subarten-->
                 <div>
                     <h2>Kameleont</h2>
                     <figure>
-                        <img src="./bilder/Kameleont.jpg" alt="Bild på kameleont">
+                        <img src="./bilder/Kameleont.webp" alt="Bild på kameleont">
                         <p>
                             Kameleonter är kända för sin förmåga att ändra färg.
                             De lever främst i träd och buskar och använder sin långa tunga för att fånga byten.
                         </p>
                     </figure>
                 </div>
-
-                <!-- Skogsödla -->
+                <!--Tredje subarten-->
                 <div>
                     <h2>Skogsödla</h2>
                     <figure>
-                        <img src="./bilder/Skogsödla.jpg" alt="Bild på skogsödla">
+                        <img src="./bilder/Skogsödla.webp" alt="Bild på skogsödla">
                         <p>
                             Skogsödlan lever i fuktiga skogsmiljöer i Europa och Asien.
                             Den är en liten ödla som trivs i svalare klimat.
                         </p>
                     </figure>
                 </div>
-
             </article>
-
-            <!-- ===== VIDEO-KNAPP ===== -->
+            <!--Här är videoknappen som dyker upp-->
             <div class="video">
                 <button onclick="spelaÖdlaVideo()">Spela video</button>
             </div>
-
-            <!-- Video som visas vid klick -->
+            <!--Det här är information om videon som ska spelas-->
             <div class="video-lada">
-                <iframe width="100%" height="250"
-                    src="https://www.youtube.com/embed/Ni27GEZ7OdI?si=lh3ZyCu7QXTy240s"
-                    title="YouTube video player"
-                    frameborder="0"
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/Ni27GEZ7OdI?si=lh3ZyCu7QXTy240s"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
-
         </main>
-
-        <!-- ===== SIDOPANEL ===== -->
+        <!--Sidebaren där referenserna ska stå-->
         <aside>
             <h3>Referenser:</h3>
             <ul>
@@ -127,17 +98,12 @@
                 <li><a href="https://sv.wikipedia.org/wiki/Skogs%C3%B6dla">Skogsödla – Wikipedia</a></li>
             </ul>
         </aside>
-
-        <!-- ===== FOOTER ===== -->
+        <!--Footern där det står vem som publicerat -->
         <footer>
             <h3>Publicerad av: Jack Carlsund TE24b</h3>
         </footer>
-
     </div>
-
-    <!-- Koppling till JavaScript -->
     <script src="script.js"></script>
-
 </body>
 
 </html>

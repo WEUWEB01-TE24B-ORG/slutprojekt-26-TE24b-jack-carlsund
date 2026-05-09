@@ -1,23 +1,21 @@
-
 // Byter bild för ormarna
-
 function bytOrmBild() {
 
     let ormBild1 = document.getElementById("ormbild1");
 
-    if (ormBild1.src.includes("Anaconda.jpg")) {
+    if (ormBild1.src.includes("Anaconda.webp")) {
 
-        ormBild1.src = "./bilder/Bushmaster.jpg";
+        ormBild1.src = "./bilder/Bushmaster.webp";
     }
 
-    else if (ormBild1.src.includes("Bushmaster.jpg")) {
+    else if (ormBild1.src.includes("Bushmaster.webp")) {
 
-        ormBild1.src = "./bilder/Water-snake.jpg";
+        ormBild1.src = "./bilder/Water-snake.webp";
     }
 
     else {
 
-        ormBild1.src = "./bilder/Anaconda.jpg";
+        ormBild1.src = "./bilder/Anaconda.webp";
     }
 }
 
@@ -26,19 +24,19 @@ function bytKrokodilBild() {
 
     let krokodilbild1 = document.getElementById("krokodilbild1");
 
-    if (krokodilbild1.src.includes("Spetskrokodilen.jpg")) {
+    if (krokodilbild1.src.includes("Spetskrokodilen.webp")) {
 
-        krokodilbild1.src = "./bilder/Pansarkrokodil.jpg";
+        krokodilbild1.src = "./bilder/Pansarkrokodil.webp";
     }
 
-    else if (krokodilbild1.src.includes("Pansarkrokodil.jpg")) {
+    else if (krokodilbild1.src.includes("Pansarkrokodil.webp")) {
 
-        krokodilbild1.src = "./bilder/Sötvattenskrokodil.jpg";
+        krokodilbild1.src = "./bilder/Sötvattenskrokodil.webp";
     }
 
     else {
 
-        krokodilbild1.src = "./bilder/Spetskrokodilen.jpg";
+        krokodilbild1.src = "./bilder/Spetskrokodilen.webp";
     }
 }
 
@@ -47,19 +45,19 @@ function bytOdlaBild() {
 
     let odlabild1 = document.getElementById("odlabild1");
 
-    if (odlabild1.src.includes("Skogsödla.jpg")) {
+    if (odlabild1.src.includes("Skogsödla.webp")) {
 
-        odlabild1.src = "./bilder/Kameleont.jpg";
+        odlabild1.src = "./bilder/Kameleont.webp";
     }
 
-    else if (odlabild1.src.includes("Kameleont.jpg")) {
+    else if (odlabild1.src.includes("Kameleont.webp")) {
 
-        odlabild1.src = "./bilder/Sandödla.jpg";
+        odlabild1.src = "./bilder/Sandödla.webp";
     }
 
     else {
 
-        odlabild1.src = "./bilder/Kameleont.jpg";
+        odlabild1.src = "./bilder/Kameleont.webp";
     }
 }
 
@@ -71,9 +69,9 @@ function bytSköldpaddaBild() {
 
     let bilder = [
 
-        "./bilder/Landssköldpadda.jpg",
-        "./bilder/Havssköldpadda.JPG",
-        "./bilder/Cheloniamydas.JPG"
+        "./bilder/Landssköldpadda.webp",
+        "./bilder/Havssköldpadda.webp",
+        "./bilder/Cheloniamydas.webp"
     ];
 
     sköldIndex++;

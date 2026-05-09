@@ -2,137 +2,112 @@
 <html lang="sv">
 
 <head>
-    <!-- Grundinställningar för tecken och mobilanpassning -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reptiler - Krokodiler</title>
-
-    <!-- Koppling till CSS -->
+    <title>Reptiler</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- ===== HUVUDCONTAINER ===== -->
+    <!-- Huvudcontainer för hela sidan -->
     <div class="kontainer">
-
-        <!-- ===== HEADER (logga + meny) ===== -->
+        <!--Header som ligger högst upp-->
         <header>
-
-            <!-- Klickbar bild som byter krokodil -->
+            <!-- När användaren klickar på bilden byter den krokodil-->
             <div class="cirkel">
-                <img id="krokodilbild1"
-                     class="circle"
-                     src="./bilder/Spetskrokodilen.jpg"
-                     alt="Krokodil bild"
-                     onclick="bytKrokodilBild()">
+                <img id="krokodilbild1" class="circle" src="./bilder/Spetskrokodilen.webp" alt="Krokodil bild"
+                    onclick="bytKrokodilBild()">
             </div>
-
-            <!-- Navigationsmeny -->
+            <!-- Navigations meny där du kan gå till andra hemsidor -->
             <nav>
                 <a href="sida1.html">Ormar</a>
                 <a href="sida2.html" class="aktiv">Krokodiler</a>
                 <a href="sida3.html">Ödlor</a>
                 <a href="sida4.html">Sköldpaddor</a>
             </nav>
-
         </header>
-
-        <!-- ===== HUVUDINNEHÅLL ===== -->
+        <!-- Här är main och det mesta av innehållet ligger här -->
         <main>
-
-            <!-- Sidrubrik -->
+            <!-- Här är sidans huvud rubrik -->
             <h1>Krokodiler</h1>
-
-            <!-- Stor introduktionsbild -->
+            <!--Här är en stor bild och text-->
             <figure class="art">
-                <img src="./bilder/Krokodil.jpg" alt="Bild på krokodil">
-
+                <img src="./bilder/Krokodil.webp" alt="Bild på krokodil">
                 <figcaption>
-                    Saltvattenkrokodilen är den största krokodilarten i världen och kan bli över 6 meter lång.
-                    Nilkrokodilen är näst störst och dvärgkrokodilen är den minsta arten.
+                    Saltvattenkrokodilen, eller deltakrokodilen som den också kallas, är den <br>
+                    största arten. De största intygade måtten för arten är 6,3 meter längd och <br>
+                    något över ett ton i vikt.[1] Nilkrokodilen är den näst största och kan bli <br>
+                    upp till 5,5 meter lång och väga ungefär ett ton.[2] Den minsta arten är dvärgkrokodilen <br>
+                    som vanligen har en längd av 1,6 meter (sällan upp till 1,9 meter).[3] Krokodilernas färg kan <br>
+                    variera mellan grön, brun och grå. Krokodilernas nosar är smalare och spetsigare än nosen på alligatorer
+                    och kajmaner medan krokodilerna har bredare nos än gavialen. 
                 </figcaption>
             </figure>
-
-            <!-- ===== TRE INFORMATIONSKORT ===== -->
+            <!--Här är tre olia subarter och information om dem-->
             <article>
-
-                <!-- Spetskrokodil -->
+                <!--Första subarten-->
                 <div>
                     <h2>Spetskrokodil</h2>
                     <figure>
-                        <img src="./bilder/Spetskrokodilen.jpg" alt="Bild på spetskrokodil">
+                        <img src="./bilder/Spetskrokodilen.webp" alt="Bild på spetskrokodil">
                         <p>
                             Spetskrokodilen lever i Amerika och kallas även amerikansk krokodil.
                             Den har en lång och smal nos och lever i både salt- och sötvatten.
                         </p>
                     </figure>
                 </div>
-
-                <!-- Pansarkrokodil -->
+                <!--Andra subarten-->
                 <div>
                     <h2>Pansarkrokodil</h2>
                     <figure>
-                        <img src="./bilder/Pansarkrokodil.JPG" alt="Bild på pansarkrokodil">
+                        <img src="./bilder/Pansarkrokodil.webp" alt="Bild på pansarkrokodil">
                         <p>
                             Pansarkrokodilen lever i Afrika och blir upp till 4 meter lång.
                             Den äter främst fisk och smådjur och är inte särskilt aggressiv.
                         </p>
                     </figure>
                 </div>
-
-                <!-- Sötvattenskrokodil -->
+                <!--Tredje subarten-->
                 <div>
                     <h2>Sötvattenskrokodil</h2>
                     <figure>
-                        <img src="./bilder/Sötvattenskrokodil.jpg" alt="Bild på sötvattenskrokodil">
+                        <img src="./bilder/Sötvattenskrokodil.webp" alt="Bild på sötvattenskrokodil">
                         <p>
                             Sötvattenskrokodilen lever i Australien och är mindre än andra krokodilarter.
                             Den lever i floder och äter fisk, fåglar och smådjur.
                         </p>
                     </figure>
                 </div>
-
             </article>
-
-            <!-- ===== VIDEO-KNAPP ===== -->
+            <!--Här är videoknappen som dyker upp-->
             <div class="video">
                 <button onclick="spelaKrokodilVideo()">Spela video</button>
             </div>
-
-            <!-- Video som visas vid klick -->
+            <!--Det här är information om videon som ska spelas-->
             <div class="video-lada">
-                <iframe width="100%" height="250"
-                    src="https://www.youtube.com/embed/mldTwJ-X0U8?si=N2_0FEwW_LjXiu7d"
-                    title="YouTube video player"
-                    frameborder="0"
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/mldTwJ-X0U8?si=N2_0FEwW_LjXiu7d"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
-
         </main>
-
-        <!-- ===== SIDOPANEL ===== -->
+        <!--Sidebaren där referenserna ska stå-->
         <aside>
             <h3>Referenser:</h3>
             <ul>
                 <li><a href="https://sv.wikipedia.org/wiki/Spetskrokodil">Spetskrokodil – Wikipedia</a></li>
                 <li><a href="https://sv.wikipedia.org/wiki/Pansarkrokodil">Pansarkrokodil – Wikipedia</a></li>
-                <li><a href="https://sv.wikipedia.org/wiki/S%C3%B6tvattenkrokodil">Sötvattenskrokodil – Wikipedia</a></li>
+                <li><a href="https://sv.wikipedia.org/wiki/S%C3%B6tvattenkrokodil">Sötvattenskrokodil – Wikipedia</a>
+                </li>
             </ul>
         </aside>
-
-        <!-- ===== FOOTER ===== -->
+        <!--Footern där det står vem som publicerat -->
         <footer>
             <h3>Publicerad av: Jack Carlsund TE24b</h3>
         </footer>
-
     </div>
-
-    <!-- Koppling till JavaScript -->
     <script src="script.js"></script>
-
 </body>
 
 </html>
